@@ -1,0 +1,31 @@
+{
+  "name": "package-bootstrap",
+  "version": "0.0.0",
+  "description": "",
+  "bin": "index.sh",
+  "scripts": {
+    "test": "./index.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quarterto/package-bootstrap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quarterto/package-bootstrap/issues"
+  },
+  "homepage": "https://github.com/quarterto/package-bootstrap#readme",
+  "dependencies": {
+    "@quarterto/is-installing-package": "^1.1.0"
+  },
+  "bundledDependencies": [
+    "@quarterto/is-installing-package"
+  ],
+  "config": {
+    "bootstrapFiles": [
+      "test.txt"
+    ]
+  }
+}
