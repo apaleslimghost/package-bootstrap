@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo $0
+npm_bin="$(dirname "$0")"
 
 files=$(env | grep npm_package_config_bootstrapFiles | cut -f 2 -d '=')
 destination=${1:-$(pwd)}
@@ -17,7 +17,7 @@ copy_files() {
 	done
 }
 
-if is-installing-package ; then
+if $npm_bin/is-installing-package ; then
 	echo "  ⎘ installing bootstrap files for $npm_package_name to $destination"
 	copy_files
 	echo "  ✔︎ done"
